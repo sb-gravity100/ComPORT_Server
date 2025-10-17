@@ -36,7 +36,7 @@ const reviewSchema = new mongoose.Schema(
    },
    {
       timestamps: true,
-      collection: 'reviews',
+      collection: 'mock_reviews',
    }
 );
 

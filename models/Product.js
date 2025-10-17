@@ -10,16 +10,7 @@ const productSchema = new mongoose.Schema(
       category: {
          type: String,
          required: [true, 'Category is required'],
-         enum: [
-            'CPU',
-            'GPU',
-            'RAM',
-            'Motherboard',
-            'Storage',
-            'PSU',
-            'Case',
-            'Cooling',
-         ],
+         enum: ['CPU', 'GPU', 'RAM', 'Motherboard', 'Storage', 'PSU', 'Case'],
       },
       brand: {
          type: String,
@@ -75,7 +66,7 @@ const productSchema = new mongoose.Schema(
    },
    {
       timestamps: true,
-      collection: 'products',
+      collection: 'mock_products',
    }
 );
 

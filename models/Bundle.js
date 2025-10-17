@@ -54,7 +54,7 @@ const bundleSchema = new mongoose.Schema(
    },
    {
       timestamps: true,
-      collection: 'bundles',
+      collection: 'mock_bundles',
    }
 );
 
