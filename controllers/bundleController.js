@@ -18,6 +18,7 @@ export const createBundle = async (req, res) => {
                message: `Product ${item.product} not found`,
             });
          }
+         console.log(product.price);
          totalPrice += product.price;
       }
 
