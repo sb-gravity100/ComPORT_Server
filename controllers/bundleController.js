@@ -6,20 +6,33 @@ import User from '../models/User.js';
 // @route   POST /api/bundles
 export const createBundle = async (req, res) => {
    try {
-      const { name, products, notes } = req.body;
+      const {
+         name,
+         parts = {},
+         notes = '',
+         compatibilityScore = 0,
+         comfortProfile = {},
+         isPublic = false,
+      } = req.body;
 
-      // Calculate total price
+      const products = [];
       let totalPrice = 0;
-      for (const item of products) {
-         const product = await Product.findById(item.product);
+
+      for (const [categoryId, part] of Object.entries(parts)) {
+         const product = await Product.findById(part._id);
          if (!product) {
             return res.status(404).json({
                success: false,
-               message: `Product ${item.product} not found`,
+               message: `Product ${part._id} not found in category ${categoryId}`,
             });
          }
-         console.log(product.price);
-         totalPrice += product.price;
+
+         products.push({
+            product: product._id,
+            category: categoryId,
+         });
+
+         totalPrice += part.selectedPrice || 0;
       }
 
       const bundle = await Bundle.create({
@@ -27,6 +40,9 @@ export const createBundle = async (req, res) => {
          name,
          products,
          totalPrice,
+         compatibilityScore,
+         comfortProfile,
+         isPublic,
          notes,
       });
 
