@@ -23,6 +23,26 @@ const bundleSchema = new mongoose.Schema(
                type: String,
                required: true,
             },
+            selectedSource: {
+               shopName: {
+                  type: String,
+                  required: true,
+               },
+               price: {
+                  type: Number,
+                  required: true,
+                  min: 0,
+               },
+               productUrl: {
+                  type: String,
+                  required: true,
+               },
+               shipping: {
+                  available: { type: Boolean, default: true },
+                  cost: { type: Number, default: 0 },
+                  estimatedDays: { type: String },
+               },
+            },
          },
       ],
       totalPrice: {

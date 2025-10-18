@@ -8,37 +8,69 @@ export const createBundle = async (req, res) => {
    try {
       const {
          name,
-         parts = {},
+         products = [], // Now expecting array of {product: id, category: string}
+         sources = {}, // New: {categoryId: sourceData}
          notes = '',
          compatibilityScore = 0,
          comfortProfile = {},
          isPublic = false,
       } = req.body;
 
-      const products = [];
       let totalPrice = 0;
+      const bundleProducts = [];
 
-      for (const [categoryId, part] of Object.entries(parts)) {
-         const product = await Product.findById(part._id);
+      // Validate and calculate price from selected sources
+      for (const item of products) {
+         const product = await Product.findById(item.product);
          if (!product) {
             return res.status(404).json({
                success: false,
-               message: `Product ${part._id} not found in category ${categoryId}`,
+               message: `Product ${item.product} not found`,
             });
          }
 
-         products.push({
+         // Get the selected source for this category
+         const selectedSource = sources[item.category];
+
+         if (!selectedSource) {
+            return res.status(400).json({
+               success: false,
+               message: `No source selected for ${item.category}`,
+            });
+         }
+
+         // Verify the source exists in the product
+         const sourceExists = product.sources.some(
+            (s) =>
+               s.shopName === selectedSource.shopName &&
+               s.price === selectedSource.price
+         );
+
+         if (!sourceExists) {
+            return res.status(400).json({
+               success: false,
+               message: `Invalid source for ${product.name}`,
+            });
+         }
+
+         bundleProducts.push({
             product: product._id,
-            category: categoryId,
+            category: item.category,
+            selectedSource: {
+               shopName: selectedSource.shopName,
+               price: selectedSource.price,
+               productUrl: selectedSource.productUrl,
+               shipping: selectedSource.shipping,
+            },
          });
 
-         totalPrice += part.selectedPrice || 0;
+         totalPrice += selectedSource.price;
       }
 
       const bundle = await Bundle.create({
          user: req.user._id,
          name,
-         products,
+         products: bundleProducts,
          totalPrice,
          compatibilityScore,
          comfortProfile,
@@ -50,9 +82,13 @@ export const createBundle = async (req, res) => {
          $push: { savedBundles: bundle._id },
       });
 
+      const populatedBundle = await Bundle.findById(bundle._id).populate(
+         'products.product'
+      );
+
       res.status(201).json({
          success: true,
-         bundle,
+         bundle: populatedBundle,
       });
    } catch (error) {
       res.status(500).json({
