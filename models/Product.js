@@ -142,7 +142,6 @@ const productSchema = new mongoose.Schema(
 // Indexes for searching and filtering
 productSchema.index({ name: 'text', brand: 'text', model: 'text' });
 productSchema.index({ category: 1, 'priceRange.average': 1 });
-productSchema.index({ groupKey: 1 });
 productSchema.index({ 'sources.shopName': 1 });
 
 // Generate groupKey before saving

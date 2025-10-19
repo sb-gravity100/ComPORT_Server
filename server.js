@@ -1,3 +1,4 @@
+// server.js
 import express from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
@@ -5,7 +6,9 @@ import connectDB from './config/db.js';
 import authRoutes from './routes/auth.js';
 import productRoutes from './routes/products.js';
 import bundleRoutes from './routes/bundles.js';
+import mlRoutes from './routes/ml.js';
 import errorHandler from './middleware/errorHandler.js';
+import comfortRatingService from './services/comfortRatingService.js';
 import path from 'path';
 
 dotenv.config();
@@ -34,6 +37,7 @@ app.use('/static', express.static(path.resolve('./static')));
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/bundles', bundleRoutes);
+app.use('/api/ml', mlRoutes);
 
 // Health check
 app.get('/', (req, res) => {
@@ -42,16 +46,26 @@ app.get('/', (req, res) => {
       status: 'OK',
       timestamp: new Date(),
       statusCode: 200,
+      mlStatus: comfortRatingService.isModelReady ? 'Ready' : 'Initializing',
    });
 });
 
 // Error Handler
 app.use(errorHandler);
 
-// Connect Database
+// Connect Database and Initialize ML Model
 connectDB().then(async () => {
+   // Initialize the ML model
+   try {
+      console.log('Initializing ML Comfort Rating System...');
+      await comfortRatingService.initializeModel();
+      console.log('✓ ML System Ready');
+   } catch (error) {
+      console.error('✗ ML System initialization failed:', error);
+   }
+
    app.listen(PORT, () => {
       console.log(path.resolve('./static'));
-      console.log(`Server running on port http://localhost:${PORT}`);
+      console.log(`Server running on http://localhost:${PORT}`);
    });
 });

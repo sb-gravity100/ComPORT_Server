@@ -1,79 +1,66 @@
+// controllers/bundleController.js (UPDATED)
 import Bundle from '../models/Bundle.js';
 import Product from '../models/Product.js';
 import User from '../models/User.js';
+import comfortRatingService from '../services/comfortRatingService.js';
+import { checkCompatibility } from '../utils/compatibilityUtils.js';
 
-// @desc    Create new bundle
+// @desc    Create new bundle with ML comfort rating
 // @route   POST /api/bundles
 export const createBundle = async (req, res) => {
    try {
       const {
          name,
-         products = [], // Now expecting array of {product: id, category: string}
-         sources = {}, // New: {categoryId: sourceData}
+         parts = {},
          notes = '',
          compatibilityScore = 0,
          comfortProfile = {},
          isPublic = false,
       } = req.body;
 
+      const products = [];
       let totalPrice = 0;
-      const bundleProducts = [];
+      const fullParts = {};
 
-      // Validate and calculate price from selected sources
-      for (const item of products) {
-         const product = await Product.findById(item.product);
+      // Fetch full product data
+      for (const [categoryId, part] of Object.entries(parts)) {
+         const product = await Product.findById(part._id);
          if (!product) {
             return res.status(404).json({
                success: false,
-               message: `Product ${item.product} not found`,
+               message: `Product ${part._id} not found in category ${categoryId}`,
             });
          }
 
-         // Get the selected source for this category
-         const selectedSource = sources[item.category];
-
-         if (!selectedSource) {
-            return res.status(400).json({
-               success: false,
-               message: `No source selected for ${item.category}`,
-            });
-         }
-
-         // Verify the source exists in the product
-         const sourceExists = product.sources.some(
-            (s) =>
-               s.shopName === selectedSource.shopName &&
-               s.price === selectedSource.price
-         );
-
-         if (!sourceExists) {
-            return res.status(400).json({
-               success: false,
-               message: `Invalid source for ${product.name}`,
-            });
-         }
-
-         bundleProducts.push({
+         products.push({
             product: product._id,
-            category: item.category,
-            selectedSource: {
-               shopName: selectedSource.shopName,
-               price: selectedSource.price,
-               productUrl: selectedSource.productUrl,
-               shipping: selectedSource.shipping,
-            },
+            category: categoryId,
          });
 
-         totalPrice += selectedSource.price;
+         fullParts[categoryId] = product;
+         totalPrice += part.selectedPrice || 0;
+      }
+
+      // Calculate compatibility
+      const compatibilityReport = checkCompatibility(fullParts);
+
+      // Calculate ML-based comfort rating
+      let mlComfortProfile = comfortProfile;
+      try {
+         mlComfortProfile =
+            await comfortRatingService.calculateBundleComfortRating(fullParts);
+         console.log('ML Comfort Rating:', mlComfortProfile);
+      } catch (error) {
+         console.error('ML comfort calculation failed, using provided:', error);
       }
 
       const bundle = await Bundle.create({
          user: req.user._id,
          name,
-         products: bundleProducts,
+         products,
          totalPrice,
-         compatibilityScore,
-         comfortProfile,
+         compatibilityScore: compatibilityReport.score || compatibilityScore,
+         comfortProfile: mlComfortProfile,
          isPublic,
          notes,
       });
@@ -82,13 +69,11 @@ export const createBundle = async (req, res) => {
          $push: { savedBundles: bundle._id },
       });
 
-      const populatedBundle = await Bundle.findById(bundle._id).populate(
-         'products.product'
-      );
-
       res.status(201).json({
          success: true,
-         bundle: populatedBundle,
+         bundle,
+         compatibility: compatibilityReport,
+         mlComfortRating: mlComfortProfile,
       });
    } catch (error) {
       res.status(500).json({
@@ -98,7 +83,7 @@ export const createBundle = async (req, res) => {
    }
 };
 
-// @desc    Get user bundles
+// @desc    Get user bundles with comfort ratings
 // @route   GET /api/bundles
 export const getUserBundles = async (req, res) => {
    try {
@@ -119,7 +104,7 @@ export const getUserBundles = async (req, res) => {
    }
 };
 
-// @desc    Get single bundle
+// @desc    Get single bundle with detailed comfort analysis
 // @route   GET /api/bundles/:id
 export const getBundle = async (req, res) => {
    try {
@@ -143,6 +128,26 @@ export const getBundle = async (req, res) => {
             success: false,
             message: 'Not authorized to view this bundle',
          });
+      }
+
+      // Recalculate comfort rating if needed (optional)
+      if (!bundle.comfortProfile || !bundle.comfortProfile.overall) {
+         try {
+            const fullParts = {};
+            bundle.products.forEach((p) => {
+               fullParts[p.category] = p.product;
+            });
+
+            const mlComfortProfile =
+               await comfortRatingService.calculateBundleComfortRating(
+                  fullParts
+               );
+
+            bundle.comfortProfile = mlComfortProfile;
+            await bundle.save();
+         } catch (error) {
+            console.error('Failed to recalculate comfort:', error);
+         }
       }
 
       res.json({
