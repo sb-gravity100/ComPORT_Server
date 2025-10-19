@@ -33,6 +33,11 @@ const sourceSchema = new mongoose.Schema({
    },
 });
 
+const descriptionSchema = new mongoose.Schema({
+   name: String,
+   description: String,
+});
+
 const productSchema = new mongoose.Schema(
    {
       name: {
@@ -88,11 +93,7 @@ const productSchema = new mongoose.Schema(
          type: Map,
          of: String,
       },
-      compatibilityTags: [
-         {
-            type: String,
-         },
-      ],
+      descriptions: [descriptionSchema],
       imageUrl: {
          type: String,
       },
@@ -154,6 +155,20 @@ productSchema.pre('save', function (next) {
       this.groupKey = normalized;
    }
    next();
+});
+
+productSchema.post('find', (doc) => {
+   for (let i = 0; i < doc.length; i++) {
+      const v = doc[i];
+      v.availableAt = v.sources.filter((a) => a.inStock).length;
+      v.totalSources = v.sources.length;
+      console.log(v.availableAt);
+   }
+});
+
+productSchema.post('findOne', (doc) => {
+   doc.availableAt = doc.sources.filter((a) => a.inStock).length;
+   doc.totalSources = doc.sources.length;
 });
 
 // Method to update price range

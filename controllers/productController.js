@@ -34,7 +34,7 @@ export const getProducts = async (req, res) => {
       }
 
       if (inStockOnly === 'true') {
-         query.availableAt = { $gt: 0 };
+         query['sources.inStock'] = true;
       }
 
       let sortOption = {};
@@ -44,7 +44,17 @@ export const getProducts = async (req, res) => {
       else if (sort === 'availability') sortOption.availableAt = -1;
       else sortOption.createdAt = -1;
 
-      const products = await Product.find(query).sort(sortOption);
+      const products = (await Product.find(query).sort(sortOption)).map((x) => {
+         const v = x.toJSON();
+         const z = {};
+         if (shopName) {
+            z.availableAt = 0;
+            z.sources = v.sources.filter((a) => a.shopName === shopName);
+            z.availableAt = z.sources.filter((a) => a.inStock).length;
+            console.log(v.availableAt);
+         }
+         return { ...v, ...z };
+      });
 
       res.json({
          success: true,
