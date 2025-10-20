@@ -162,7 +162,7 @@ productSchema.post('find', (doc) => {
       const v = doc[i];
       v.availableAt = v.sources.filter((a) => a.inStock).length;
       v.totalSources = v.sources.length;
-      console.log(v.availableAt);
+      // console.log(v.availableAt);
    }
 });
 

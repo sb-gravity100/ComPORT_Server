@@ -8,8 +8,8 @@
       "start": "node server.js",
       "dev": "nodemon server.js",
       "train": "node scripts/trainModel.js",
-      "update-scores": "node scripts/updateComfortScores.js",
-      "init-ml": "node scripts/initializeMLSystem.js"
+      "scores": "node scripts/updateComfortScores.js",
+      "ml": "node scripts/initializeMLSystem.js"
    },
    "dependencies": {
       "@tensorflow/tfjs-node": "^4.15.0",

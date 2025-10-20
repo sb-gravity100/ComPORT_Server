@@ -151,7 +151,7 @@ async function initializeMLSystem() {
 
       console.log('\nOptional Commands:');
       console.log('  • Retrain model: npm run train');
-      console.log('  • Update all scores: npm run update-scores');
+      console.log('  • Update all scores: npm run scores');
       console.log('  • Seed more reviews: node scripts/seedReviewData.js\n');
 
       process.exit(0);
