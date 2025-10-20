@@ -26,8 +26,6 @@ const reviewSchema = new mongoose.Schema(
       comfortRatings: {
          ease: { type: Number, min: 1, max: 5 },
          performance: { type: Number, min: 1, max: 5 },
-         noise: { type: Number, min: 1, max: 5 },
-         temperature: { type: Number, min: 1, max: 5 },
       },
       helpful: {
          type: Number,
