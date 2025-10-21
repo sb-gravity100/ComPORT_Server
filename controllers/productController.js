@@ -458,14 +458,14 @@ export const updateProduct = async (req, res) => {
       const productId = req.params.id;
       const updateData = req.body;
       // merge sources if provided
+      const product = await Product.findById(productId);
+      if (!product) {
+         return res.status(404).json({
+            success: false,
+            message: 'Product not found',
+         });
+      }
       if (updateData.sources?.length > 0) {
-         const product = await Product.findById(productId);
-         if (!product) {
-            return res.status(404).json({
-               success: false,
-               message: 'Product not found',
-            });
-         }
          updateData.sources.forEach((newSource) => {
             const exists = product.sources.some(
                (s) => s.shopName === newSource.shopName
@@ -474,23 +474,26 @@ export const updateProduct = async (req, res) => {
                product.sources.push(newSource);
             }
          });
-         product.updatePriceRange();
-         await product.save();
-         return res.json({
-            success: true,
-            product,
+         updateData.ratings.bySource.forEach((newRating) => {
+            const exists = product.ratings.bySource.some(
+               (r) => r.shopName === newRating.shopName
+            );
+            if (!exists) {
+               product.ratings.bySource.push(newRating);
+            }
          });
       }
-      const product = await Product.findByIdAndUpdate(productId, updateData, {
-         new: true,
+      Object.keys(updateData).forEach((key) => {
+         if (key !== 'sources' && key !== 'ratings') {
+            // check if value is blank or null
+            if (updateData[key] !== null && updateData[key] !== '') {
+               product[key] = updateData[key];
+            }
+         }
       });
-      if (!product) {
-         return res.status(404).json({
-            success: false,
-            message: 'Product not found',
-         });
-      }
-      res.json({
+      product.updatePriceRange();
+      await product.save();
+      return res.json({
          success: true,
          product,
       });
