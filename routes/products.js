@@ -9,6 +9,7 @@ import {
    getReviews,
    getShops,
    createProduct,
+   updateProduct,
 } from '../controllers/productController.js';
 import { adminOnly, protect } from '../middleware/authMiddleware.js';
 
