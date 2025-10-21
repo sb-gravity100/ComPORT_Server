@@ -144,8 +144,8 @@ export const updateProfile = async (req, res) => {
             });
          }
          user.password = password;
-         await user.save();
       }
+      await user.save();
 
       res.json({
          success: true,
