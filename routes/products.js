@@ -26,5 +26,6 @@ router.get('/:id/reviews', getReviews);
 router.post('/:id/sources', protect, addProductSource);
 router.post('/:id/reviews', protect, createReview);
 router.post('/', protect, adminOnly, createProduct);
+router.put('/:id', protect, adminOnly, updateProduct);
 
 export default router;

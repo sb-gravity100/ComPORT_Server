@@ -452,3 +452,28 @@ export const createProduct = async (req, res) => {
       });
    }
 };
+
+export const updateProduct = async (req, res) => {
+   try {
+      const productId = req.params.id;
+      const updateData = req.body;
+      const product = await Product.findByIdAndUpdate(productId, updateData, {
+         new: true,
+      });
+      if (!product) {
+         return res.status(404).json({
+            success: false,
+            message: 'Product not found',
+         });
+      }
+      res.json({
+         success: true,
+         product,
+      });
+   } catch (error) {
+      res.status(500).json({
+         success: false,
+         message: error.message,
+      });
+   }
+};
