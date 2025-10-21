@@ -1,0 +1,1682 @@
+[
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e722"
+    },
+    "rating": 3,
+    "comment": "Adipiscor advenio vociferor damno cariosus aqua voluptates spes vivo aequitas adfectus sono conscendo usque usus approbo alius tres.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-01-22T20:32:39.147Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-29T11:28:59.042Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71b"
+    },
+    "rating": 1,
+    "comment": "Nobis explicabo sumo combibo vulgaris universe turbo certe vulgus vobis.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 5
+    },
+    "helpful": 4,
+    "createdAt": {
+      "$date": "2025-09-15T17:37:57.879Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-23T06:08:32.576Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e723"
+    },
+    "rating": 5,
+    "comment": "Sto victus curso desino thesis commodo totidem constans accedo porro solum administratio summisse volup tollo tamdiu arceo soleo cursus coadunatio pax casus adulescens audentia provident adsum tempore valetudo dolore tondeo ad tam absconditus.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 3
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-03-30T20:46:12.049Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-12T17:51:31.959Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6e7"
+    },
+    "rating": 5,
+    "comment": "Careo cariosus sol maxime deporto undique ulterius aeger votum demonstro varius stipes conforto audio vis voveo cervus decipio teres fugit aedificium deripio officiis vobis tametsi cribro bibo tantillus rerum cavus sustineo cunabula angelus varius aeger delego constans ater voluntarius aequus tactus argentum alter adinventitias civis adflicto desipio.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 7,
+    "createdAt": {
+      "$date": "2025-09-25T07:29:11.751Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-27T01:25:36.543Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e729"
+    },
+    "rating": 5,
+    "comment": "Cetera beatae adduco aeger ad comes ager nostrum thymbra trucido sollers vae angelus perferendis deleo bibo acquiro cibo textilis calcar aperiam adstringo titulus adipiscor cubicularis talio cado umquam trans derelinquo thema cunabula repellat consectetur cotidie confido.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 1
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-03-14T08:30:06.689Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T14:32:15.282Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e727"
+    },
+    "rating": 5,
+    "comment": "Amplitudo doloremque non atque comptus amicitia coniuratio artificiose natus voluptatum callide vespillo correptius voluntarius caterva acquiro bonus.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 1
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-03-29T18:14:19.804Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T07:00:56.949Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e705"
+    },
+    "rating": 3,
+    "comment": "Corrupti deleo agnosco temporibus ancilla apud balbus dolores accendo thermae molestias demoror termes commodi cum at summopere ademptio veniam utroque aeternus depulso apostolus pecto video tibi curis comprehendo somniculosus confero autus.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 4
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2025-01-07T22:18:02.660Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T02:15:22.490Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e70a"
+    },
+    "rating": 3,
+    "comment": "Vergo summa viscus velut umerus tenus spectaculum usitas adstringo peior viscus caterva articulus terebro agnosco turpis necessitatibus.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 4
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2025-01-03T17:18:56.007Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-18T11:12:18.105Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e704"
+    },
+    "rating": 3,
+    "comment": "Volubilis apud tergiversatio cattus trucido terebro bis decor solio stips facilis exercitationem currus delicate angelus amet curo utpote dens tabella aureus abutor trepide stultus terebro despecto magnam utrimque utrum dolorem capillus repellendus ustulo tergiversatio venia territo cuppedia curto versus carus convoco aperiam.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 1
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2024-10-28T22:50:09.118Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-01T20:37:12.865Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e72d"
+    },
+    "rating": 1,
+    "comment": "Mollitia tenax ullus praesentium delectus carpo antepono torrens venustas audentia vesco thesis beatae sum tremo aggredior atavus ara atrox vivo non canonicus suasoria deduco non terminatio appello vomica arma campana suffoco articulus arto consectetur tener sulum vilicus verecundia beatae unde caterva.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 5
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-07-03T19:47:26.648Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-27T05:49:29.344Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71f"
+    },
+    "rating": 1,
+    "comment": "Usque ubi theologus aranea aliquam cogito cui synagoga angelus conatus curto repudiandae absens vae tabella doloremque tripudio tergeo verecundia curiositas tredecim vestrum sursum abstergo odit spero.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 5
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-07-24T10:22:17.497Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-22T04:53:30.007Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e700"
+    },
+    "rating": 2,
+    "comment": "Terminatio distinctio inventore conscendo quidem maiores ter vilitas reiciendis calco porro expedita ocer conventus admoneo architecto crepusculum omnis aspicio sopor crustulum turpis dolore voluptates defetiscor armarium adsuesco textor angulus terra bos sulum uredo comes cerno.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-03-01T19:47:34.826Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-25T21:20:58.739Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e712"
+    },
+    "rating": 2,
+    "comment": "Eaque traho socius thesaurus accendo aspicio decens alveus vaco verto vesco callide.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 3
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2025-06-17T23:50:28.268Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T21:23:06.933Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6f7"
+    },
+    "rating": 2,
+    "comment": "Vesco denego surculus suffragium quisquam solus callide alias defleo sonitus admoneo tumultus conscendo varietas amet tamisium.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 3
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-03-23T08:22:49.545Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T11:06:32.698Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e701"
+    },
+    "rating": 5,
+    "comment": "Suadeo damnatio volo somnus abundans colligo coniecto nesciunt curia contigo laboriosam sequi arbustum dedico tibi magni textus umquam vergo desino conscendo pecus speculum denego via cinis viscus placeat ventus viduo adulatio atrox absens fugit solitudo vito minus crur constans dolorum vulgus cometes circumvenio vitium animus vestigium voluntarius benevolentia trans canis.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 4
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-06-24T21:42:43.884Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-15T21:48:48.292Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e702"
+    },
+    "rating": 1,
+    "comment": "Theologus tero auxilium decipio spero vulgo beatus alter tametsi volva ultra caries.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 2
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2024-12-20T09:41:46.281Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-17T04:34:48.597Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e730"
+    },
+    "rating": 4,
+    "comment": "Cenaculum decipio laborum perferendis ars ultra confido tamdiu terebro comis concido vestrum cultura cogito benigne sto strues suppellex ventus stultus sol complectus arguo decimus traho absorbeo stillicidium ultra somnus cuppedia sordeo absconditus summa.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 1
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-05-13T02:20:57.690Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-02T15:06:04.438Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e706"
+    },
+    "rating": 4,
+    "comment": "Bis votum vehemens maxime constans studio cursus aptus aptus accusator avarus aperte coaegresco sodalitas quis crur molestias tredecim custodia accusantium tactus coniuratio.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 1
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2025-07-17T19:41:28.045Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-29T02:37:06.267Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71c"
+    },
+    "rating": 4,
+    "comment": "Dicta cursim basium canonicus temporibus demum tracto ustilo tamen cinis conturbo tametsi volutabrum tribuo placeat conatus.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 4
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-08-19T20:06:05.904Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-27T14:31:29.291Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2838362d3fcbe0eb2f643"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e715"
+    },
+    "rating": 3,
+    "comment": "Degusto certus conturbo universe autem amet verbum absum modi pauci autem iure adicio sed abstergo.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 2
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2024-11-13T15:11:53.858Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-09T04:14:38.164Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71a"
+    },
+    "rating": 2,
+    "comment": "Torrens deduco harum velit hic delectatio uxor temporibus barba adsidue bibo cauda deripio accusamus eum tabgo ait deprecator adstringo cubicularis repudiandae virgo in cena iusto addo tempus templum volo vox stultus verumtamen bellum constans odio coerceo trucido cauda adeptio baiulus corrigo spes corrupti suppono consequuntur curatio aduro.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 2
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-02-17T21:11:30.252Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-26T23:44:08.075Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e720"
+    },
+    "rating": 1,
+    "comment": "Sapiente quia ubi vito ulciscor carmen magnam soleo sint sol coma accusamus summa turpis arbitro benevolentia synagoga arma stips umerus.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 2
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-05-18T00:31:39.861Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-24T14:02:50.237Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e701"
+    },
+    "rating": 3,
+    "comment": "Depromo aperte suffoco alius natus pax desolo laudantium infit quas eius talio video stipes admitto suffragium abutor bardus tenus arx adulatio cunctatio et studio error beneficium adhaero vos pax certe coadunatio voluptatem culpa utroque nemo voluptas depraedor sub convoco arguo mollitia ademptio caries tres pecus blanditiis inventore facilis utroque.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2024-12-20T00:06:03.682Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-24T05:42:01.553Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ea"
+    },
+    "rating": 1,
+    "comment": "Quidem unus optio thesaurus calco perferendis soluta tracto volo depono auctor surculus utpote advoco videlicet officiis exercitationem pecto.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 3
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2024-12-02T07:40:53.657Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-30T22:54:38.452Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e706"
+    },
+    "rating": 2,
+    "comment": "Decor bos eveniet abscido comburo bellum porro assentator natus damnatio similique complectus decipio denuncio ascisco ambitus argumentum nam averto despecto infit vos concido vomer aro cenaculum debitis blandior venio.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 2
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-10-12T01:47:19.573Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-06T20:20:41.049Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71d"
+    },
+    "rating": 3,
+    "comment": "Convoco terga sulum varius bis fugit vapulus cauda ad aurum deserunt demitto vereor.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 3
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-07-03T06:07:13.894Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-16T11:24:35.698Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e700"
+    },
+    "rating": 2,
+    "comment": "Eius sublime iure perferendis usque comedo volaticus crux amplus spes tolero vinitor volubilis celer stella sublime vae vergo deduco sortitus esse tantum causa cupiditate commemoro cum cogito vindico uterque socius commodo demitto deputo colligo conservo vicissitudo basium unde varius tabula possimus voluptatum celer nulla adeptio decumbo cupiditate caput arguo defetiscor.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 2
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2025-06-02T10:00:41.522Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-26T09:20:44.783Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e712"
+    },
+    "rating": 2,
+    "comment": "Amicitia assentator credo adipiscor sono corpus acies cotidie tergo constans approbo valde debeo ars valetudo earum pecco cogito terminatio sint aegre viridis sapiente acidus spiritus pecto viscus venustas patior facere vester comis amitto capillus asporto neque celer labore amet paulatim cunae venustas adeo eaque utroque.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 4
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-03-04T21:19:50.207Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T06:46:40.365Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e731"
+    },
+    "rating": 5,
+    "comment": "Viduo tenuis substantia cohors carbo avaritia suasoria cariosus quos odio tyrannus nobis defluo quo architecto vitiosus cometes cibo dedico cubo bonus maxime combibo velum adduco turbo doloremque amita apto terra textus vox demonstro solitudo quos assentator libero.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 3
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-06-24T06:14:39.025Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-20T18:19:17.891Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e729"
+    },
+    "rating": 3,
+    "comment": "Adaugeo enim charisma voro placeat acceptus argumentum voluptates sufficio depono adfectus thermae cubitum vulariter abbas delibero cimentarius voluptatibus suasoria cetera ambulo avarus minima tenus sophismata alii et recusandae amissio pariatur admitto.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 5
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-08-09T08:21:05.169Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T19:29:33.660Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e704"
+    },
+    "rating": 1,
+    "comment": "Avaritia amitto possimus denique alienus valetudo demergo contabesco deprimo celer catena denuncio tersus cado vinitor corpus uberrime taceo colo eum statim ex tantum adopto aut benigne theatrum complectus vesica somnus verumtamen circumvenio caterva sequi enim stultus vallum demens uxor vita derelinquo vestigium laboriosam.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 4
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2024-11-05T05:33:00.947Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-01T07:34:58.575Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e719"
+    },
+    "rating": 3,
+    "comment": "Ascisco soluta carmen cursus strues curto sol volo vos assentator dedico vulpes demens sed suppono cruentus approbo vitium traho quae somniculosus sol ante uxor nostrum utique molestiae conor.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 4
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2024-12-21T16:41:28.127Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-06T14:40:06.380Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71f"
+    },
+    "rating": 2,
+    "comment": "Aut nesciunt adinventitias accusamus doloremque conservo utroque timidus atrox vespillo cupressus clam vulgaris patria vergo vero thesis dolore trepide subseco aestas delicate quisquam caveo conqueror tolero surculus deporto deprimo venia minima optio cumque nemo constans acies aestas expedita creptio quasi bardus distinctio correptius maiores tum.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 4
+    },
+    "helpful": 7,
+    "createdAt": {
+      "$date": "2025-05-18T04:47:02.790Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T13:17:33.003Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6e7"
+    },
+    "rating": 1,
+    "comment": "Aureus demum basium qui damno blanditiis confero testimonium ambitus solium terror adulescens quidem artificiose vapulus temperantia audio ambulo minus anser magnam decerno asperiores sapiente testimonium verbera vesco ventus decimus despecto deficio succedo pauper censura fugiat nemo sursum subito tabella.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-09-26T06:28:55.279Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-02T13:39:31.376Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ed"
+    },
+    "rating": 1,
+    "comment": "Attero magnam modi defungo vicissitudo ascisco substantia auctor decipio supellex amissio vaco.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 3
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2024-12-22T00:13:54.613Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-16T19:43:21.280Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e722"
+    },
+    "rating": 5,
+    "comment": "Decipio coepi somnus demoror titulus tener placeat explicabo laudantium auctor bardus chirographum demitto copia ascisco patior recusandae caritas cinis crux decet vester vorax pariatur.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 1
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-10-08T02:35:20.071Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-20T04:32:45.146Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e72d"
+    },
+    "rating": 1,
+    "comment": "Nemo stips neque demum illum conculco tabgo tutis odio cogo cursim ter collum dolores spargo atrox aurum esse benigne architecto tollo veritatis vulgus ipsum solum defetiscor commodi alias volo.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 5
+    },
+    "helpful": 6,
+    "createdAt": {
+      "$date": "2025-10-01T19:00:42.355Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-22T03:32:51.827Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6f7"
+    },
+    "rating": 2,
+    "comment": "Cognomen dolore veritas alius cenaculum taceo aeternus strues sumptus texo ventus adaugeo trado asporto antea tenetur studio artificiose depraedor cervus vesper somniculosus ullam attero urbanus adaugeo acervus pecto rerum magnam aperiam aequus praesentium valens vitium bis consequuntur ventito.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 4
+    },
+    "helpful": 6,
+    "createdAt": {
+      "$date": "2025-02-04T12:32:14.761Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-02T16:28:00.358Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e705"
+    },
+    "rating": 5,
+    "comment": "Aiunt contra spectaculum sodalitas crastinus arbitro tolero adnuo terra amoveo attero aperio timidus perspiciatis spero rem suadeo comparo subiungo earum aperio surgo colligo centum campana appositus viduo pax nostrum tricesimus quos.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 5
+    },
+    "helpful": 4,
+    "createdAt": {
+      "$date": "2025-06-28T16:17:05.093Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-05T06:11:30.837Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f2c663d516e48003e2e117"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e723"
+    },
+    "rating": 2,
+    "comment": "Creo valetudo undique amor pecto adipiscor cohibeo tenax conqueror vacuus fuga tribuo repellendus tyrannus dapifer rerum cedo autem vir arx suasoria praesentium supplanto debilito voluntarius curriculum deripio acquiro vesper ipsa nam explicabo suscipit arbitro cena veritas cedo tumultus.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 3
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2025-09-01T03:51:39.987Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-25T23:58:05.165Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e727"
+    },
+    "rating": 2,
+    "comment": "Cariosus excepturi acsi sono tamisium delibero confido auctor delicate decet stella quod audio subito auctus.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 5
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2025-09-18T04:04:25.993Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-26T03:05:07.610Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e72d"
+    },
+    "rating": 1,
+    "comment": "Totam undique vergo tametsi textilis clamo creator comitatus deludo asporto timidus defendo sint circumvenio iure verbera pectus sint crepusculum coaegresco capillus coruscus vapulus speculum acerbitas sollicito conscendo terga aveho animus.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 1
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2025-06-10T16:50:45.552Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-30T04:50:47.719Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ea"
+    },
+    "rating": 1,
+    "comment": "Attonbitus ipsam cauda defluo adficio terra ultra vulpes adamo torrens claudeo.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 4
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-04-02T17:48:51.823Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-04T00:14:49.391Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ed"
+    },
+    "rating": 4,
+    "comment": "Beneficium viriliter appositus confugo suus cresco omnis atrocitas stabilis tantillus cimentarius viduo.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 1
+    },
+    "helpful": 4,
+    "createdAt": {
+      "$date": "2025-04-15T13:14:22.676Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T12:25:37.329Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e720"
+    },
+    "rating": 3,
+    "comment": "Coniuratio sapiente delibero vinco agnitio nulla ratione comedo amet uterque illum maxime vester usque curiositas torqueo victoria creta vulticulus abutor comis texo adfectus repellat.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 1
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-03-17T10:08:05.669Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-10T04:47:18.736Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e729"
+    },
+    "rating": 4,
+    "comment": "Auditor vis stabilis molestias eligendi decet temperantia porro nam tener suppono facilis possimus suadeo denego thermae illo calamitas valens carmen sint corona corrupti anser aggredior coniuratio.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 2
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-07-25T13:47:56.892Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-03T21:53:13.644Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e707"
+    },
+    "rating": 5,
+    "comment": "Texo tumultus culpa trans vindico decipio arguo aeger triduana comis acerbitas congregatio velociter.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 2
+    },
+    "helpful": 7,
+    "createdAt": {
+      "$date": "2025-06-01T19:05:07.425Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-11T23:37:21.523Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71b"
+    },
+    "rating": 2,
+    "comment": "Avaritia viduo currus sapiente sublime tolero casus confero caritas cena angustus sordeo doloremque tristis calculus consectetur distinctio tutis urbanus defungo arbustum vorago adipisci paens corporis texo conicio consuasor tam laboriosam ad demens aggero inflammatio tempus aedificium demens ademptio chirographum accusamus constans voluptatibus cerno consequatur sopor blandior tactus tego velut.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 4
+    },
+    "helpful": 6,
+    "createdAt": {
+      "$date": "2025-04-10T13:45:11.090Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-04T06:17:12.994Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e70f"
+    },
+    "rating": 5,
+    "comment": "Vigor arbor admoveo sint coruscus adsidue suus aetas velut nesciunt vere trado pax bonus pel appono.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 3
+    },
+    "helpful": 6,
+    "createdAt": {
+      "$date": "2025-06-14T12:15:06.275Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-24T20:36:29.067Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71c"
+    },
+    "rating": 2,
+    "comment": "Dedecor sustineo enim aliqua deludo illum cornu compono circumvenio aestus urbs subiungo quos caput surculus sponte caries usitas ad deporto autus arbor audax culpa campana tenetur caput stips delectatio spiculum infit turbo sollers statim ustilo carmen cognatus sui cito absens absum tergo cena.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 1
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-08-20T21:55:49.291Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T21:41:54.104Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6e7"
+    },
+    "rating": 3,
+    "comment": "Sunt conitor laudantium vulariter aliquid basium defessus defero copia barba adamo crustulum ara tendo valens suppellex claro toties corporis terebro solvo vestigium defero aequus tardus theatrum utrimque defero conicio tepesco et cuppedia stillicidium eius uter bonus dolorum.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 1
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-07-20T13:37:28.641Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T08:23:43.003Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71a"
+    },
+    "rating": 1,
+    "comment": "Claudeo suspendo demens bonus aegre ipsum via sophismata accusantium decor degero comburo tamquam sponte thorax suadeo quos creator possimus solium autus thesaurus defungo utpote abundans absorbeo velut vis abeo ultio alias temperantia rem ancilla sollers bene claro cognatus strenuus audax.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 5
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-04-26T19:03:57.633Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-20T09:25:59.853Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e723"
+    },
+    "rating": 3,
+    "comment": "Ultio peccatus vesper tamen appello ager cohaero defleo commemoro amissio sub quibusdam autem spoliatio capillus succedo peior caecus aspicio inventore versus minus termes convoco eos suscipio creator tracto aqua suasoria uxor acidus accusantium thorax sint capio somnus decor terreo vallum deserunt.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 2
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-08-06T23:11:32.338Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-11T03:07:43.838Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e722"
+    },
+    "rating": 3,
+    "comment": "Arbor caute itaque voluptatum denego triduana solutio voro demulceo aliqua commemoro uter coma placeat cur demulceo aurum error inventore ceno cribro argumentum sursum autem tracto commodi bonus vespillo arcus animus sperno truculenter absens torrens cedo tergo audax damnatio sapiente aureus comedo volup careo pectus conor colo.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 3
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2025-04-23T18:53:59.236Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-07T14:46:25.121Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e715"
+    },
+    "rating": 5,
+    "comment": "Atque tergiversatio autus tremo earum theca confido compono statim aegrus absum surculus absum caput cupiditas tabula sit cupiditate video pauper deludo adflicto.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 5
+    },
+    "helpful": 3,
+    "createdAt": {
+      "$date": "2025-07-05T06:14:05.181Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T12:37:36.511Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e731"
+    },
+    "rating": 1,
+    "comment": "Crux accusator dens ars aut creber civitas depraedor consequuntur cras accommodo sufficio ullam adipisci perspiciatis tertius arcus adstringo aeneus deprecator dolor stips alo talis conqueror tardus verbum debitis auctor tyrannus tertius absque quae veniam aequus defendo desidero molestias comminor amitto trado tabernus vomica tergo ut ait modi valeo tergiversatio.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 3
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2024-12-09T02:44:17.499Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T18:17:53.963Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e70a"
+    },
+    "rating": 2,
+    "comment": "Cimentarius solus damno conqueror contego conculco decerno stillicidium voluptates inflammatio volubilis quisquam cursus voro occaecati sumptus demo solus pecus arto traho quisquam coruscus vinitor vox advoco sperno commodi ciminatio deprecator amicitia ambitus cum itaque.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 5
+    },
+    "helpful": 7,
+    "createdAt": {
+      "$date": "2024-12-23T04:52:09.498Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-14T08:11:43.864Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e719"
+    },
+    "rating": 5,
+    "comment": "Utpote conventus praesentium tamquam libero capitulus tracto antea ocer viscus comptus confugo derelinquo ocer comitatus demoror aeger sufficio ad.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 5
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2025-09-25T00:14:34.820Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-04T01:31:50.890Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e701"
+    },
+    "rating": 4,
+    "comment": "Quos ulterius corrupti creo suffragium sapiente vinculum vinitor stillicidium suppellex a campana omnis tum voluptate virga ventus voluptas vilis balbus modi tricesimus.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 5
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2024-11-04T12:05:32.485Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T00:39:42.622Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f780a0c8780da851c2c55c"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e706"
+    },
+    "rating": 2,
+    "comment": "Ascit tum pax voluptatum conduco confero arca cur valetudo studio.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 3
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2025-08-28T17:20:11.452Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-21T14:56:19.542Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ea"
+    },
+    "rating": 2,
+    "comment": "Solio pecco aeneus pauper suasoria cuppedia aggero ara defessus audio sollicito caput baiulus vulpes cubicularis amplus cimentarius decens ventus velum averto auxilium admoneo verbera dolor consequatur confero aduro adinventitias deporto acervus spoliatio vesper tutamen decumbo temperantia terebro tabernus subseco sublime creo aliquam valetudo celo illo.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 4
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-09-19T19:16:38.284Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-09T11:02:55.755Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e731"
+    },
+    "rating": 3,
+    "comment": "Ait tracto cunabula ager pel aliquam curso undique centum conqueror ex tabella ab doloribus ustulo concido caveo et absum confugo suadeo auxilium copia commemoro dedico tamen alveus expedita contego supplanto arceo sono demulceo.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 1
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2024-11-23T00:58:27.979Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-29T21:26:41.885Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6ed"
+    },
+    "rating": 4,
+    "comment": "Tabgo tergum carpo depono demonstro via cuppedia aer caste adfero delego deporto auctus versus virtus minima cupressus vinco utique careo armarium denuo celer abstergo varius ago eum caste claudeo tutamen repellendus taceo spoliatio amita sumptus cum.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 5
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-08-04T22:01:53.982Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-02T11:25:57.152Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71f"
+    },
+    "rating": 5,
+    "comment": "Administratio umquam blandior decens aeternus arceo corrumpo contabesco degusto cetera verbera suppellex centum abscido maxime pel sursum appono bibo pel cattus tantum virgo strues cervus soluta cuius amaritudo textilis crur cogo mollitia arbustum bos veniam vaco dolorum officiis tripudio brevis talis defendo.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 4
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-06-16T05:38:04.213Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-30T10:40:57.609Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a8bcbd59b222927e6f7"
+    },
+    "rating": 1,
+    "comment": "Copia absque causa vigilo compello degero illum commodo delectus vestrum apparatus coniecto audentia odit tenax voluptatibus vilitas cogito voluptate condico cotidie auctus ascit agnosco appositus ipsam aptus.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 2
+    },
+    "helpful": 2,
+    "createdAt": {
+      "$date": "2025-03-07T15:31:23.180Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-29T16:23:34.571Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e702"
+    },
+    "rating": 1,
+    "comment": "Tollo animadverto trado titulus subseco cetera expedita audacia defessus agnitio adficio cicuta sublime audax uredo circumvenio color umerus verecundia placeat totidem denuo.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 2
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2025-03-14T07:02:46.630Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-09T22:18:11.958Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e727"
+    },
+    "rating": 4,
+    "comment": "Caries civitas una angustus tremo pel argentum tero deorsum vorax delectatio turba ascisco adhaero eligendi spectaculum quasi charisma adstringo vigilo canto laborum cimentarius cattus suppellex curatio exercitationem adinventitias ventito amplitudo super vulgus iusto.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 3
+    },
+    "helpful": 7,
+    "createdAt": {
+      "$date": "2025-09-09T10:25:48.116Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-14T01:59:07.583Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71b"
+    },
+    "rating": 3,
+    "comment": "Terreo audio comptus desino canis curvo adflicto sui tumultus defleo vorago pecco cursus trucido communis abstergo adicio ancilla cunae capio circumvenio aequitas vilicus tergiversatio damno vitiosus communis aedificium vallum deserunt vos subvenio quae.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 1
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-02-23T15:58:20.661Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-04T12:47:20.821Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e706"
+    },
+    "rating": 1,
+    "comment": "Assentator aspernatur alo curtus crux demo reprehenderit summopere adficio universe consequatur armarium talus ars atrocitas depulso conspergo audentia crux iure taceo demo laudantium tabernus peior voco video damno celo pecco debitis cohaero tres soleo.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 2
+    },
+    "helpful": 8,
+    "createdAt": {
+      "$date": "2025-05-13T02:42:34.523Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-19T22:29:54.288Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e723"
+    },
+    "rating": 2,
+    "comment": "Solvo caecus supellex cognatus comes conservo eius cernuus synagoga adicio terminatio comminor spargo voveo paens vitae coniecto excepturi beatus cumque voluptas.",
+    "comfortRatings": {
+      "ease": 4,
+      "performance": 1
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-08-10T05:03:57.862Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-26T14:12:34.565Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e719"
+    },
+    "rating": 1,
+    "comment": "Sumo derideo explicabo qui attollo considero vulgo casso tenetur crepusculum paulatim nulla tibi textus vicinus ipsam alienus solum terga arto admoveo carcer utrimque natus dignissimos ea ducimus molestiae amor amita pecto nobis cursus delibero beatus conscendo articulus thymum.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 3
+    },
+    "helpful": 1,
+    "createdAt": {
+      "$date": "2025-06-16T10:38:12.579Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-14T09:56:45.864Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71a"
+    },
+    "rating": 5,
+    "comment": "Universe arca umbra dolorum custodia adversus usque aeternus canis sperno sto cogito aurum praesentium sed tero debilito cubitum vel pecto arma sed id crastinus sto fugiat ventus suadeo cedo unus teres comedo cogito neque aut nulla desino absens incidunt sodalitas virtus aggredior undique corporis absum custodia.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 4
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2024-12-30T16:23:11.633Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-16T13:38:35.019Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e715"
+    },
+    "rating": 5,
+    "comment": "Barba cernuus thesaurus utpote vacuus fuga pauci vulpes sollicito causa ustilo auctor demonstro deleo victoria adipisci deprimo tabella certus decens cubicularis vinculum aufero subnecto trado depereo pecto voluptas truculenter curia altus iure canto earum esse doloremque aggero ad ipsa coaegresco apparatus consequatur una demulceo aegre texo celer optio deinde.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 3
+    },
+    "helpful": 10,
+    "createdAt": {
+      "$date": "2025-03-16T16:34:23.279Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-11T06:45:50.997Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e701"
+    },
+    "rating": 1,
+    "comment": "Vita temptatio aggredior venustas sordeo sordeo tamdiu adimpleo culpa solio aro curvo tricesimus thorax audeo neque sollers tabella aegre ea bardus derelinquo repudiandae aro.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2025-09-10T21:21:35.991Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-26T21:24:57.118Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78a92cbd59b222927e70a"
+    },
+    "rating": 1,
+    "comment": "Bellum advoco vesco molestias brevis alii catena tempus nemo cubicularis sponte umerus depereo vereor adipiscor demonstro dolor triduana tener sollers velit ademptio contabesco conatus defessus venustas demergo tametsi victus alii umquam barba alo tepidus arca coniecto reiciendis.",
+    "comfortRatings": {
+      "ease": 3,
+      "performance": 2
+    },
+    "helpful": 5,
+    "createdAt": {
+      "$date": "2024-11-19T04:03:48.630Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-14T04:36:02.160Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71c"
+    },
+    "rating": 5,
+    "comment": "Cura architecto bellum perferendis corporis ex certe ipsa absque tolero urbs adficio denego pauper ater arbor constans consectetur vergo tribuo desidero ipsa adversus aliquid.",
+    "comfortRatings": {
+      "ease": 2,
+      "performance": 1
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-05-29T01:45:40.585Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-12T22:44:31.379Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e722"
+    },
+    "rating": 2,
+    "comment": "Caput aspernatur earum delectatio depraedor cupio commodi templum solitudo copiose sui ait torqueo acidus cavus debeo decipio vilicus voluptate vae arbitro tempus impedit suasoria absorbeo velit aptus adicio suffoco aliqua cuppedia decipio illo casus alienus usque audacia solium quibusdam capillus abstergo.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 4
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2024-10-25T19:16:06.896Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T19:19:59.003Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e720"
+    },
+    "rating": 3,
+    "comment": "Quidem vel antea delectatio tamdiu delego timor debilito comburo alveus corrumpo adimpleo tamquam cibus supra conventus utpote baiulus nemo.",
+    "comfortRatings": {
+      "ease": 1,
+      "performance": 5
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-04-24T19:12:21.914Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-04T06:56:28.658Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e71d"
+    },
+    "rating": 5,
+    "comment": "Vere labore celebrer tempore possimus tot sonitus distinctio alienus adipiscor appositus creo varius videlicet aegre vilicus tricesimus alioqui vomito conculco nemo bellum conatus iste venio cura caput catena corrupti aliquam vetus.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 4
+    },
+    "helpful": 0,
+    "createdAt": {
+      "$date": "2025-10-10T12:14:10.464Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-11T15:04:57.099Z"
+    }
+  },
+  {
+    "user": {
+      "$oid": "68f78b3f67cd7722b40abbae"
+    },
+    "product": {
+      "$oid": "68f78aa1cbd59b222927e729"
+    },
+    "rating": 2,
+    "comment": "Comparo timidus theologus curo deludo undique agnosco ullus depulso infit celer apto cogito admoveo aro coepi suasoria tondeo soluta distinctio sint tristis dedecor thorax benigne suspendo ante uxor adficio decretum benigne vir comparo aranea aptus.",
+    "comfortRatings": {
+      "ease": 5,
+      "performance": 2
+    },
+    "helpful": 9,
+    "createdAt": {
+      "$date": "2025-05-31T12:06:45.570Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-18T06:52:30.089Z"
+    }
+  }
+]

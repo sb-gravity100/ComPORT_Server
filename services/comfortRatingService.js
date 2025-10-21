@@ -22,7 +22,7 @@ class ComfortRatingService {
             layers: [
                tf.layers.dense({
                   inputShape: [12], // 12 input features: price(3) + shop ratings(4) + reviews(5)
-                  units: 32,
+                  units: 29,
                   activation: 'relu',
                   kernelInitializer: 'heNormal',
                }),
@@ -39,7 +39,7 @@ class ComfortRatingService {
                   kernelInitializer: 'heNormal',
                }),
                tf.layers.dense({
-                  units: 4, // 4 outputs: ease, performance, noise, temperature
+                  units: 2, // 4 outputs: ease, performance, noise, temperature
                   activation: 'sigmoid', // Output between 0-1
                }),
             ],
@@ -55,10 +55,11 @@ class ComfortRatingService {
          // Try to load pre-trained weights if they exist
          try {
             await this.model.loadWeights(
-               path.resolve('./ml_models/comfort_model/model.json')
+               `file://${path.resolve('./ml_models/comfort_model/model.json')}`
             );
             console.log('Loaded pre-trained comfort model weights');
          } catch (error) {
+            console.log(error);
             console.log('No pre-trained weights found, using fresh model');
          }
 
@@ -175,8 +176,6 @@ class ComfortRatingService {
          return {
             avgEase: 0.5,
             avgPerformance: 0.5,
-            avgNoise: 0.5,
-            avgTemperature: 0.5,
             reviewCount: 0,
             recency: 0,
             consistency: 0.5,
@@ -184,13 +183,9 @@ class ComfortRatingService {
       }
 
       let totalEase = 0,
-         totalPerformance = 0,
-         totalNoise = 0,
-         totalTemperature = 0;
+         totalPerformance = 0;
       let countEase = 0,
-         countPerformance = 0,
-         countNoise = 0,
-         countTemperature = 0;
+         countPerformance = 0;
 
       reviews.forEach((review) => {
          if (review.comfortRatings?.ease) {
@@ -201,14 +196,6 @@ class ComfortRatingService {
             totalPerformance += review.comfortRatings.performance;
             countPerformance++;
          }
-         if (review.comfortRatings?.noise) {
-            totalNoise += review.comfortRatings.noise;
-            countNoise++;
-         }
-         if (review.comfortRatings?.temperature) {
-            totalTemperature += review.comfortRatings.temperature;
-            countTemperature++;
-         }
       });
 
       return {
@@ -216,11 +203,6 @@ class ComfortRatingService {
          avgPerformance:
             countPerformance > 0
                ? totalPerformance / countPerformance / 5
-               : 0.5,
-         avgNoise: countNoise > 0 ? totalNoise / countNoise / 5 : 0.5,
-         avgTemperature:
-            countTemperature > 0
-               ? totalTemperature / countTemperature / 5
                : 0.5,
          reviewCount: reviews.length,
          recency: this.calculateReviewRecency(reviews),
@@ -250,23 +232,18 @@ class ComfortRatingService {
 
       // Combine features into input vector
       const inputFeatures = [
-         // Price features (3)
          productFeatures.avgPrice,
          productFeatures.priceRange,
-         productFeatures.priceToRatingRatio,
-
-         // Shop rating features (4)
          productFeatures.overallShopRating,
          productFeatures.shopRatingCount,
-         productFeatures.avgShopRating,
          productFeatures.shopAvailability,
-
-         // Platform review features (5)
          productFeatures.platformRating,
          productFeatures.platformReviewCount,
          productFeatures.reviewRecency,
          productFeatures.reviewConsistency,
          productFeatures.avgUserRating,
+         productFeatures.priceToRatingRatio,
+         productFeatures.avgShopRating,
       ];
 
       // If we have review data, use it to adjust predictions
@@ -294,10 +271,7 @@ class ComfortRatingService {
 
       // Calculate overall score
       comfortScore.overall = Math.round(
-         comfortScore.ease * 0.2 +
-            comfortScore.performance * 0.3 +
-            comfortScore.noise * 0.25 +
-            comfortScore.temperature * 0.25
+         comfortScore.ease * 0.2 + comfortScore.performance * 0.3
       );
 
       return comfortScore;
@@ -468,25 +442,23 @@ class ComfortRatingService {
 
          if (reviewFeatures.reviewCount > 0) {
             const inputFeatures = [
-               features.tdp,
-               features.coolingCapacity,
-               features.fanCount,
-               features.clockSpeed,
-               features.coreCount,
-               features.memorySize,
-               features.powerEfficiency,
-               features.storageSpeed,
-               features.noiseLevel,
-               features.hasActiveCooling,
+               features.avgPrice,
                features.priceRange,
-               features.buildQuality,
+               features.overallShopRating,
+               features.shopRatingCount,
+               features.shopAvailability,
+               features.platformRating,
+               features.platformReviewCount,
+               features.reviewRecency,
+               features.reviewConsistency,
+               features.avgUserRating,
+               features.priceToRatingRatio,
+               features.avgShopRating,
             ];
 
             const outputLabels = [
                reviewFeatures.avgEase,
                reviewFeatures.avgPerformance,
-               reviewFeatures.avgNoise,
-               reviewFeatures.avgTemperature,
             ];
 
             trainingData.push({ input: inputFeatures, output: outputLabels });
@@ -504,7 +476,7 @@ class ComfortRatingService {
 
       // Train the model
       await this.model.fit(inputs, outputs, {
-         epochs: 50,
+         epochs: 200,
          batchSize: 32,
          validationSplit: 0.2,
          callbacks: {

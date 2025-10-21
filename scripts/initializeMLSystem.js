@@ -1,4 +1,3 @@
-// scripts/initializeMLSystem.js
 import dotenv from 'dotenv';
 import connectDB from '../config/db.js';
 import comfortRatingService from '../services/comfortRatingService.js';
@@ -99,31 +98,28 @@ async function initializeMLSystem() {
       console.log(`\n[${STEPS.UPDATE_SCORES}]`);
       console.log('Calculating comfort scores for all products...\n');
 
-      const products = await Product.find().limit(50); // Limit for initial setup
+      const products = await Product.find().limit(50);
       let updated = 0;
 
       for (let i = 0; i < products.length; i++) {
-         const product = products[i];
          try {
             const comfortScore =
                await comfortRatingService.calculateProductComfortRating(
-                  product._id
+                  products[i]._id
                );
-
-            await Product.findByIdAndUpdate(product._id, {
+            await Product.findByIdAndUpdate(products[i]._id, {
                comfortScore: comfortScore.overall,
             });
-
             updated++;
-
-            // Progress indicator
             if ((i + 1) % 10 === 0) {
                console.log(
                   `  Processed ${i + 1}/${products.length} products...`
                );
             }
          } catch (error) {
-            console.error(`  ✗ Failed for ${product.name}: ${error.message}`);
+            console.error(
+               `  ✗ Failed for ${products[i].name}: ${error.message}`
+            );
          }
       }
 
@@ -166,42 +162,20 @@ async function seedSampleReviews() {
       highPerformance: {
          rating: 5,
          comment: 'Excellent performance, handles demanding tasks with ease.',
-         comfortRatings: { ease: 4, performance: 5, noise: 4, temperature: 4 },
-      },
-      silent: {
-         rating: 5,
-         comment: 'Very quiet operation, perfect for quiet environments.',
-         comfortRatings: { ease: 4, performance: 4, noise: 5, temperature: 4 },
-      },
-      cool: {
-         rating: 5,
-         comment:
-            'Stays cool even under heavy load, great thermal performance.',
-         comfortRatings: { ease: 4, performance: 4, noise: 4, temperature: 5 },
+         comfortRatings: { ease: 4, performance: 5 },
       },
       balanced: {
          rating: 4,
-         comment: 'Good balance of performance, noise, and temperature.',
-         comfortRatings: { ease: 4, performance: 4, noise: 4, temperature: 4 },
-      },
-      hot: {
-         rating: 3,
-         comment: 'Runs quite hot under load, needs good cooling.',
-         comfortRatings: { ease: 3, performance: 4, noise: 3, temperature: 2 },
-      },
-      loud: {
-         rating: 3,
-         comment: 'Performance is good but fans can get noisy.',
-         comfortRatings: { ease: 3, performance: 4, noise: 2, temperature: 3 },
+         comment: 'Good balance of performance and usability.',
+         comfortRatings: { ease: 4, performance: 4 },
       },
       efficient: {
          rating: 5,
          comment: 'Very efficient, low power consumption and heat.',
-         comfortRatings: { ease: 5, performance: 4, noise: 4, temperature: 5 },
+         comfortRatings: { ease: 5, performance: 4 },
       },
    };
 
-   // Get or create test user
    let testUser = await User.findOne({ username: 'ml_reviewer' });
    if (!testUser) {
       testUser = await User.create({
@@ -216,59 +190,33 @@ async function seedSampleReviews() {
    let created = 0;
 
    for (const product of products) {
-      // Check if already has reviews
-      const existingReviews = await Review.countDocuments({
+      const hasReview = await Review.exists({
+         user: testUser._id,
          product: product._id,
       });
-      if (existingReviews > 0) continue;
+      if (hasReview) continue;
 
-      // Select template based on product
-      let template = reviewTemplates.balanced;
       const specs = product.specifications || {};
+      let template = reviewTemplates.balanced;
 
-      switch (product.category) {
-         case 'CPU':
-            const cpuTDP = parseInt(specs.TDP?.replace('W', '')) || 65;
-            template =
-               cpuTDP > 150
-                  ? reviewTemplates.hot
-                  : cpuTDP < 65
-                  ? reviewTemplates.efficient
-                  : reviewTemplates.highPerformance;
-            break;
-         case 'GPU':
-            const gpuTDP = parseInt(specs.TDP?.replace('W', '')) || 150;
-            template =
-               gpuTDP > 300
-                  ? reviewTemplates.hot
-                  : gpuTDP < 150
-                  ? reviewTemplates.efficient
-                  : reviewTemplates.highPerformance;
-            break;
-         case 'Storage':
-            template = specs.type?.toLowerCase().includes('ssd')
-               ? reviewTemplates.silent
-               : reviewTemplates.loud;
-            break;
-         case 'PSU':
-            template =
-               specs.efficiency?.includes('Platinum') ||
-               specs.efficiency?.includes('Titanium')
-                  ? reviewTemplates.efficient
-                  : reviewTemplates.balanced;
-            break;
-         case 'Case':
-            const fans = parseInt(specs.fans) || 2;
-            template =
-               fans > 5
-                  ? reviewTemplates.cool
-                  : fans < 2
-                  ? reviewTemplates.hot
-                  : reviewTemplates.balanced;
-            break;
+      if (product.category === 'CPU' && specs.tdp) {
+         const tdp = parseInt(specs.tdp);
+         template =
+            tdp < 100
+               ? reviewTemplates.efficient
+               : reviewTemplates.highPerformance;
+      } else if (product.category === 'GPU' && specs.tdp) {
+         const tdp = parseInt(specs.tdp);
+         template =
+            tdp < 200
+               ? reviewTemplates.efficient
+               : reviewTemplates.highPerformance;
+      } else if (product.category === 'PSU' && specs.efficiencyRating) {
+         template = specs.efficiencyRating.includes('Gold')
+            ? reviewTemplates.efficient
+            : reviewTemplates.balanced;
       }
 
-      // Add variation
       const variation = Math.random() * 0.4 - 0.2;
 
       try {
@@ -286,24 +234,15 @@ async function seedSampleReviews() {
                   1,
                   Math.min(5, template.comfortRatings.performance + variation)
                ),
-               noise: Math.max(
-                  1,
-                  Math.min(5, template.comfortRatings.noise + variation)
-               ),
-               temperature: Math.max(
-                  1,
-                  Math.min(5, template.comfortRatings.temperature + variation)
-               ),
             },
          });
          created++;
       } catch (error) {
-         // Skip duplicates
+         // Skip duplicates or validation errors
       }
    }
 
    console.log(`  ✓ Created ${created} sample reviews\n`);
 }
 
-// Run initialization
 initializeMLSystem();

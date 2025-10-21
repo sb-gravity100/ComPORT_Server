@@ -33,6 +33,7 @@ async function updateAllScores() {
                await comfortRatingService.calculateProductComfortRating(
                   product._id
                );
+            console.log(comfortScore);
 
             await Product.findByIdAndUpdate(product._id, {
                comfortScore: comfortScore.overall,

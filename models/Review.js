@@ -21,7 +21,7 @@ const reviewSchema = new mongoose.Schema(
       comment: {
          type: String,
          required: [true, 'Comment is required'],
-         maxlength: [500, 'Comment cannot exceed 500 characters'],
+         maxlength: [100, 'Comment cannot exceed 500 characters'],
       },
       comfortRatings: {
          ease: { type: Number, min: 1, max: 5 },
