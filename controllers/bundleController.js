@@ -43,7 +43,7 @@ export const createBundle = async (req, res) => {
       }
 
       // Calculate compatibility
-      // const compatibilityReport = checkCompatibility(fullParts);
+      const compatibilityReport = checkCompatibility(fullParts);
 
       // Calculate ML-based comfort rating
       let mlComfortProfile = comfortProfile;

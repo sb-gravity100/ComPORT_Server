@@ -271,7 +271,7 @@ class ComfortRatingService {
 
       // Calculate overall score
       comfortScore.overall = Math.round(
-         comfortScore.ease * 0.2 + comfortScore.performance * 0.3
+         comfortScore.ease * 0.5 + comfortScore.performance * 0.5
       );
 
       return comfortScore;
