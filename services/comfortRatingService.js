@@ -290,15 +290,6 @@ class ComfortRatingService {
                reviewFeatures.avgPerformance * reviewWeight) *
                100
          ),
-         noise: Math.round(
-            (scores[2] * mlWeight + reviewFeatures.avgNoise * reviewWeight) *
-               100
-         ),
-         temperature: Math.round(
-            (scores[3] * mlWeight +
-               reviewFeatures.avgTemperature * reviewWeight) *
-               100
-         ),
       };
 
       // Calculate overall score
@@ -352,8 +343,6 @@ class ComfortRatingService {
             overall: 0,
             ease: 0,
             performance: 0,
-            noise: 0,
-            temperature: 0,
          };
       }
 
@@ -371,17 +360,13 @@ class ComfortRatingService {
       };
 
       let weightedEase = 0,
-         weightedPerformance = 0,
-         weightedNoise = 0,
-         weightedTemperature = 0;
+         weightedPerformance = 0;
       let totalWeight = 0;
 
       Object.entries(componentScores).forEach(([category, scores]) => {
          const weight = weights[category] || 0.05;
          weightedEase += scores.ease * weight;
          weightedPerformance += scores.performance * weight;
-         weightedNoise += scores.noise * weight;
-         weightedTemperature += scores.temperature * weight;
          totalWeight += weight;
       });
 
@@ -389,8 +374,6 @@ class ComfortRatingService {
       if (totalWeight > 0) {
          weightedEase /= totalWeight;
          weightedPerformance /= totalWeight;
-         weightedNoise /= totalWeight;
-         weightedTemperature /= totalWeight;
       }
 
       // Apply bundle-level adjustments based on price and ratings
@@ -404,20 +387,11 @@ class ComfortRatingService {
       // More reviews increase confidence in scores
       weightedEase *= 0.85 + reviewConfidence * 0.15;
       weightedPerformance *= 0.85 + reviewConfidence * 0.15;
-      weightedNoise *= priceAdjustment;
-      weightedTemperature *= priceAdjustment;
 
       const bundleComfort = {
-         overall: Math.round(
-            weightedEase * 0.2 +
-               weightedPerformance * 0.3 +
-               weightedNoise * 0.25 +
-               weightedTemperature * 0.25
-         ),
+         overall: Math.round(weightedEase * 0.2 + weightedPerformance * 0.3),
          ease: Math.round(weightedEase),
          performance: Math.round(weightedPerformance),
-         noise: Math.round(weightedNoise),
-         temperature: Math.round(weightedTemperature),
       };
 
       return bundleComfort;

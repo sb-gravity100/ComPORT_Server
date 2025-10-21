@@ -10,6 +10,7 @@ import mlRoutes from './routes/ml.js';
 import errorHandler from './middleware/errorHandler.js';
 import comfortRatingService from './services/comfortRatingService.js';
 import path from 'path';
+import { mergeDuplicateProducts } from './utils/mergeProducts.js';
 
 dotenv.config();
 const PORT = process.env.PORT || 5000;
@@ -59,6 +60,7 @@ connectDB().then(async () => {
    try {
       console.log('Initializing ML Comfort Rating System...');
       await comfortRatingService.initializeModel();
+      await mergeDuplicateProducts();
       console.log('✓ ML System Ready');
    } catch (error) {
       console.error('✗ ML System initialization failed:', error);
