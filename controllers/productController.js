@@ -457,6 +457,30 @@ export const updateProduct = async (req, res) => {
    try {
       const productId = req.params.id;
       const updateData = req.body;
+      // merge sources if provided
+      if (updateData.sources?.length > 0) {
+         const product = await Product.findById(productId);
+         if (!product) {
+            return res.status(404).json({
+               success: false,
+               message: 'Product not found',
+            });
+         }
+         updateData.sources.forEach((newSource) => {
+            const exists = product.sources.some(
+               (s) => s.shopName === newSource.shopName
+            );
+            if (!exists) {
+               product.sources.push(newSource);
+            }
+         });
+         product.updatePriceRange();
+         await product.save();
+         return res.json({
+            success: true,
+            product,
+         });
+      }
       const product = await Product.findByIdAndUpdate(productId, updateData, {
          new: true,
       });
