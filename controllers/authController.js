@@ -95,7 +95,7 @@ export const getMe = async (req, res) => {
       const user = await User.findById(req.user.id)
          .populate('savedBundles')
          .populate('reviews');
-
+      console.log(user?.reviews);
       res.json({
          success: true,
          user,
