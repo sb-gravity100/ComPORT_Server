@@ -1,4 +1,4 @@
-import Product from '../models/Product';
+import Product from '../models/Product.js';
 
 export async function mergeDuplicateProducts() {
    const products = await Product.find();
