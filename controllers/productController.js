@@ -1,5 +1,6 @@
 import Product from '../models/Product.js';
 import Review from '../models/Review.js';
+import { mergeDuplicateProducts } from '../utils/mergeProducts.js';
 
 // @desc    Get all products with filters
 // @route   GET /api/products
@@ -390,6 +391,33 @@ export const createProduct = async (req, res) => {
          return res.status(400).json({
             success: false,
             message: 'At least one source is required',
+         });
+      }
+
+      // compare if model already exists
+      const existingProduct = await Product.findOne({ model });
+      // if exists merge sources
+      if (existingProduct) {
+         // check first if any new sources to add
+         let newSourceAdded = false;
+         sources.forEach((newSource) => {
+            const exists = existingProduct.sources.some(
+               (s) => s.shopName === newSource.shopName
+            );
+            if (!exists) {
+               existingProduct.sources.push(newSource);
+               newSourceAdded = true;
+            }
+         });
+         // update price range if new source added
+         if (newSourceAdded) {
+            existingProduct.updatePriceRange();
+            await existingProduct.save();
+         }
+         return res.status(200).json({
+            success: true,
+            product: existingProduct,
+            message: 'Product already exists, sources merged if new ones added',
          });
       }
 
