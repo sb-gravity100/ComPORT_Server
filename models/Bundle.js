@@ -35,7 +35,7 @@ const bundleSchema = new mongoose.Schema(
                },
                productUrl: {
                   type: String,
-                  required: true,
+                  required: false,
                },
                shipping: {
                   available: { type: Boolean, default: true },

@@ -35,14 +35,15 @@ export const createBundle = async (req, res) => {
          products.push({
             product: product._id,
             category: categoryId,
+            selectedSource: part.selectedSource,
          });
 
          fullParts[categoryId] = product;
-         totalPrice += part.selectedPrice || 0;
+         totalPrice += part.selectedSource.price || 0;
       }
 
       // Calculate compatibility
-      const compatibilityReport = checkCompatibility(fullParts);
+      // const compatibilityReport = checkCompatibility(fullParts);
 
       // Calculate ML-based comfort rating
       let mlComfortProfile = comfortProfile;
