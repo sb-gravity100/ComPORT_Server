@@ -95,7 +95,6 @@ export const getMe = async (req, res) => {
       const user = await User.findById(req.user.id)
          .populate('savedBundles')
          .populate('reviews');
-      console.log(user);
       res.json({
          success: true,
          user,
@@ -131,7 +130,6 @@ export const updateProfile = async (req, res) => {
 
       const user = await User.findById(req.user._id, updates, {
          new: true,
-         runValidators: true,
       }).select('+password');
 
       // If password is being updated, verify old password
@@ -145,8 +143,8 @@ export const updateProfile = async (req, res) => {
          }
          user.password = password;
       }
-      await user.save();
 
+      await user.save();
       res.json({
          success: true,
          user,
