@@ -107,3 +107,54 @@ export const getMe = async (req, res) => {
       });
    }
 };
+
+// Add this function
+export const updateProfile = async (req, res) => {
+   try {
+      const { username, password, oldPassword } = req.body;
+      const updates = {};
+
+      if (username && username !== req.user.username) {
+         const existingUser = await User.findOne({ username });
+         if (existingUser) {
+            return res.status(400).json({
+               success: false,
+               message: 'Username already taken',
+            });
+         }
+         updates.username = username;
+      }
+
+      if (password) {
+         updates.password = password;
+      }
+
+      const user = await User.findById(req.user._id, updates, {
+         new: true,
+         runValidators: true,
+      }).select('+password');
+
+      // If password is being updated, verify old password
+      if (password) {
+         const isMatch = await user.comparePassword(oldPassword);
+         if (!isMatch) {
+            return res.status(401).json({
+               success: false,
+               message: 'Old password is incorrect',
+            });
+         }
+         user.password = password;
+         await user.save();
+      }
+
+      res.json({
+         success: true,
+         user,
+      });
+   } catch (error) {
+      res.status(500).json({
+         success: false,
+         message: error.message,
+      });
+   }
+};
