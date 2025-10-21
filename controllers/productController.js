@@ -370,3 +370,57 @@ export const getShops = async (req, res) => {
       });
    }
 };
+
+// @desc    Create new product (Admin only)
+// @route   POST /api/products
+export const createProduct = async (req, res) => {
+   try {
+      const {
+         name,
+         category,
+         brand,
+         model,
+         specifications,
+         sources,
+         imageUrl,
+      } = req.body;
+
+      // Calculate price range from sources
+      if (!sources || sources.length === 0) {
+         return res.status(400).json({
+            success: false,
+            message: 'At least one source is required',
+         });
+      }
+
+      const prices = sources.map((s) => s.price);
+      const priceRange = {
+         min: Math.min(...prices),
+         max: Math.max(...prices),
+         average: prices.reduce((a, b) => a + b, 0) / prices.length,
+      };
+
+      const product = await Product.create({
+         name,
+         category,
+         brand,
+         model,
+         specifications: specifications || {},
+         sources,
+         priceRange,
+         imageUrl,
+         availableAt: sources.filter((s) => s.inStock).length,
+         totalSources: sources.length,
+      });
+
+      res.status(201).json({
+         success: true,
+         product,
+      });
+   } catch (error) {
+      res.status(500).json({
+         success: false,
+         message: error.message,
+      });
+   }
+};

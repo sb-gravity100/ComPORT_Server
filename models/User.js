@@ -31,6 +31,10 @@ const userSchema = new mongoose.Schema(
             ref: 'Bundle',
          },
       ],
+      admin: {
+         type: Boolean,
+         default: false,
+      },
       reviews: [
          {
             type: mongoose.Schema.Types.ObjectId,

@@ -1,0 +1,901 @@
+[{
+  "category": "RAM",
+  "specifications": {
+    "memoryType": "DDR4",
+    "capacity": 16,
+    "modules": "2x8GB",
+    "speed": 3600,
+    "latency": "CL18",
+    "voltage": 1.35
+  },
+  "descriptions": [
+    {
+      "name": "Memory Type",
+      "description": "DDR4"
+    },
+    {
+      "name": "Capacity",
+      "description": "16GB (2x8GB)"
+    },
+    {
+      "name": "Speed",
+      "description": "3600MHz"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "AMD B550",
+    "socket": "AM4",
+    "formFactor": "E-ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "AMD B550"
+    },
+    {
+      "name": "Socket",
+      "description": "AM4"
+    },
+    {
+      "name": "Form Factor",
+      "description": "E-ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4400MHz"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "AMD B550",
+    "socket": "AM4",
+    "formFactor": "Mini-ITX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "AMD B550"
+    },
+    {
+      "name": "Socket",
+      "description": "AM4"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Mini-ITX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4400MHz"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "AMD B550",
+    "socket": "AM4",
+    "formFactor": "Micro-ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "AMD B550"
+    },
+    {
+      "name": "Socket",
+      "description": "AM4"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Micro-ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4400MHz"
+    }
+  ]
+},
+{
+  "category": "GPU",
+  "specifications": {
+    "gpuChip": "NVIDIA Ada Lovelace",
+    "cudaCores": 7680,
+    "vram": 12,
+    "vramType": "GDDR6X",
+    "busWidth": 192,
+    "tdp": 285,
+    "powerConnector": "1x 16-pin"
+  },
+  "descriptions": [
+    {
+      "name": "GPU",
+      "description": "NVIDIA Ada Lovelace architecture"
+    },
+    {
+      "name": "Memory",
+      "description": "12GB GDDR6X"
+    },
+    {
+      "name": "Power",
+      "description": "285W TDP"
+    }
+  ]
+},
+{
+  "category": "PSU",
+  "specifications": {
+    "wattage": 850,
+    "efficiencyRating": "80+ Gold",
+    "modularity": "Fully Modular",
+    "fanSize": "135mm",
+    "formFactor": "ATX"
+  },
+  "descriptions": [
+    {
+      "name": "Wattage",
+      "description": "850W power output"
+    },
+    {
+      "name": "Efficiency",
+      "description": "80+ Gold certified"
+    },
+    {
+      "name": "Modularity",
+      "description": "Fully modular design"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "AMD B650E",
+    "socket": "AM5",
+    "formFactor": "ATX",
+    "memoryType": "DDR5",
+    "memorySpeed": 6400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "AMD B650E"
+    },
+    {
+      "name": "Socket",
+      "description": "AM5"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR5 up to 6400MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "AM5",
+    "architecture": "Zen 4",
+    "coreCount": 8,
+    "threadCount": 16,
+    "baseClock": 4.2,
+    "boostClock": 5,
+    "integratedGraphics": "None",
+    "tdp": 120
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "AM5 platform"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "8 cores, 16 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "4.2GHz up to 5.0GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "None"
+    },
+    {
+      "name": "TDP",
+      "description": "120W"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "AM5",
+    "architecture": "Zen 4",
+    "coreCount": 8,
+    "threadCount": 16,
+    "baseClock": 4.2,
+    "boostClock": 5,
+    "integratedGraphics": "None",
+    "tdp": 120
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "AM5 platform"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "8 cores, 16 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "4.2GHz up to 5.0GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "None"
+    },
+    {
+      "name": "TDP",
+      "description": "120W"
+    }
+  ]
+},
+{
+  "category": "GPU",
+  "specifications": {
+    "gpuChip": "NVIDIA Ada Lovelace",
+    "cudaCores": 7680,
+    "vram": 12,
+    "vramType": "GDDR6X",
+    "busWidth": 192,
+    "tdp": 285,
+    "powerConnector": "1x 16-pin"
+  },
+  "descriptions": [
+    {
+      "name": "GPU",
+      "description": "NVIDIA Ada Lovelace architecture"
+    },
+    {
+      "name": "Memory",
+      "description": "12GB GDDR6X"
+    },
+    {
+      "name": "Power",
+      "description": "285W TDP"
+    }
+  ]
+},
+{
+  "category": "Case",
+  "specifications": {
+    "formFactor": "Mid Tower",
+    "material": "Aluminum, Tempered Glass",
+    "motherboardSupport": "E-ATX, ATX, Micro-ATX, Mini-ITX",
+    "radiatorSupport": "360mm Top, Side, Bottom",
+    "fanSupport": "9x 120mm"
+  },
+  "descriptions": [
+    {
+      "name": "Form Factor",
+      "description": "Mid Tower"
+    },
+    {
+      "name": "Material",
+      "description": "Aluminum and tempered glass"
+    },
+    {
+      "name": "Cooling",
+      "description": "Up to 9x 120mm fans or 3x 360mm radiators"
+    }
+  ]
+},
+{
+  "category": "GPU",
+  "specifications": {
+    "gpuChip": "NVIDIA Ada Lovelace",
+    "cudaCores": 7680,
+    "vram": 12,
+    "vramType": "GDDR6X",
+    "busWidth": 192,
+    "tdp": 285,
+    "powerConnector": "1x 16-pin"
+  },
+  "descriptions": [
+    {
+      "name": "GPU",
+      "description": "NVIDIA Ada Lovelace architecture"
+    },
+    {
+      "name": "Memory",
+      "description": "12GB GDDR6X"
+    },
+    {
+      "name": "Power",
+      "description": "285W TDP"
+    }
+  ]
+},
+{
+  "category": "RAM",
+  "specifications": {
+    "memoryType": "DDR5",
+    "capacity": 32,
+    "modules": "2x16GB",
+    "speed": 6000,
+    "latency": "CL36",
+    "voltage": 1.35
+  },
+  "descriptions": [
+    {
+      "name": "Memory Type",
+      "description": "DDR5"
+    },
+    {
+      "name": "Capacity",
+      "description": "32GB (2x16GB)"
+    },
+    {
+      "name": "Speed",
+      "description": "6000MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "AM5",
+    "architecture": "Zen 4",
+    "coreCount": 8,
+    "threadCount": 16,
+    "baseClock": 4.2,
+    "boostClock": 5,
+    "integratedGraphics": "None",
+    "tdp": 120
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "AM5 platform"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "8 cores, 16 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "4.2GHz up to 5.0GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "None"
+    },
+    {
+      "name": "TDP",
+      "description": "120W"
+    }
+  ]
+},
+{
+  "category": "Storage",
+  "specifications": {
+    "driveType": "SSD",
+    "interface": "NVMe",
+    "capacity": 2000,
+    "readSpeed": 7450,
+    "writeSpeed": 6900,
+    "formFactor": "M.2 2280"
+  },
+  "descriptions": [
+    {
+      "name": "Storage",
+      "description": "NVMe SSD"
+    },
+    {
+      "name": "Capacity",
+      "description": "2TB"
+    },
+    {
+      "name": "Performance",
+      "description": "7450MB/s read, 6900MB/s write"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 16,
+    "threadCount": 22,
+    "baseClock": 3.6,
+    "boostClock": 5.6,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "16 cores, 22 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.6GHz up to 5.6GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 10,
+    "threadCount": 18,
+    "baseClock": 3.5,
+    "boostClock": 5.6,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "10 cores, 18 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.5GHz up to 5.6GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "H770",
+    "socket": "LGA1700",
+    "formFactor": "Micro-ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4800,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel H770"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Micro-ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4800MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 10,
+    "threadCount": 16,
+    "baseClock": 3.7,
+    "boostClock": 5.3,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "10 cores, 16 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.7GHz up to 5.3GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "B760",
+    "socket": "LGA1700",
+    "formFactor": "Mini-ITX",
+    "memoryType": "DDR5",
+    "memorySpeed": 6400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel B760"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Mini-ITX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR5 up to 6400MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 12,
+    "threadCount": 20,
+    "baseClock": 3.6,
+    "boostClock": 5.5,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "12 cores, 20 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.6GHz up to 5.5GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 16,
+    "threadCount": 22,
+    "baseClock": 3.7,
+    "boostClock": 5.2,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "16 cores, 22 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.7GHz up to 5.2GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "B760",
+    "socket": "LGA1700",
+    "formFactor": "Micro-ATX",
+    "memoryType": "DDR5",
+    "memorySpeed": 5600,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel B760"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Micro-ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR5 up to 5600MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 10,
+    "threadCount": 18,
+    "baseClock": 3.7,
+    "boostClock": 5.4,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "10 cores, 18 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.7GHz up to 5.4GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "H770",
+    "socket": "LGA1700",
+    "formFactor": "ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4800,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel H770"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4800MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 10,
+    "threadCount": 18,
+    "baseClock": 3.7,
+    "boostClock": 5.5,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "10 cores, 18 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.7GHz up to 5.5GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "Z790",
+    "socket": "LGA1700",
+    "formFactor": "ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 4800,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel Z790"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 4800MHz"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "H770",
+    "socket": "LGA1700",
+    "formFactor": "Mini-ITX",
+    "memoryType": "DDR5",
+    "memorySpeed": 6400,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel H770"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Mini-ITX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR5 up to 6400MHz"
+    }
+  ]
+},
+{
+  "category": "CPU",
+  "specifications": {
+    "socket": "LGA1700",
+    "architecture": "Raptor Lake",
+    "coreCount": 16,
+    "threadCount": 22,
+    "baseClock": 3.7,
+    "boostClock": 5.1,
+    "integratedGraphics": "Intel UHD 770",
+    "tdp": 125
+  },
+  "descriptions": [
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Cores / Threads",
+      "description": "16 cores, 22 threads"
+    },
+    {
+      "name": "Clock Speed",
+      "description": "3.7GHz up to 5.1GHz"
+    },
+    {
+      "name": "Integrated Graphics",
+      "description": "Intel UHD 770"
+    },
+    {
+      "name": "TDP",
+      "description": "125W"
+    }
+  ]
+},
+{
+  "category": "Motherboard",
+  "specifications": {
+    "chipset": "Z790",
+    "socket": "LGA1700",
+    "formFactor": "Micro-ATX",
+    "memoryType": "DDR4",
+    "memorySpeed": 5600,
+    "maxMemory": 128
+  },
+  "descriptions": [
+    {
+      "name": "Chipset",
+      "description": "Intel Z790"
+    },
+    {
+      "name": "Socket",
+      "description": "LGA1700"
+    },
+    {
+      "name": "Form Factor",
+      "description": "Micro-ATX"
+    },
+    {
+      "name": "Memory",
+      "description": "DDR4 up to 5600MHz"
+    }
+  ]
+}]

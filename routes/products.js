@@ -8,8 +8,9 @@ import {
    createReview,
    getReviews,
    getShops,
+   createProduct,
 } from '../controllers/productController.js';
-import { protect } from '../middleware/authMiddleware.js';
+import { adminOnly, protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
@@ -24,5 +25,6 @@ router.get('/:id/reviews', getReviews);
 // Protected routes
 router.post('/:id/sources', protect, addProductSource);
 router.post('/:id/reviews', protect, createReview);
+router.post('/', protect, adminOnly, createProduct);
 
 export default router;
