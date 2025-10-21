@@ -59,7 +59,6 @@ class ComfortRatingService {
             );
             console.log('Loaded pre-trained comfort model weights');
          } catch (error) {
-            console.log(error);
             console.log('No pre-trained weights found, using fresh model');
          }
 
